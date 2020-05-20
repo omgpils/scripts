@@ -1,5 +1,3 @@
-#!/bin/sh
-
 #Clean log files
 # ??
 
