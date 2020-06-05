@@ -94,3 +94,14 @@ https://github.com/microsoft/winget-cli/releases/tag/v0.1.4331-preview
 #MICROSOFT EDGE
 Invoke-WebRequest -Uri http://dl.delivery.mp.microsoft.com/filestreamingservice/files/1fc0c5fe-c1f5-4879-a43c-515d9f731444/MicrosoftEdgeEnterpriseX64.msi  -OutFile MicrosoftEdge.msi -UseBasicParsing
 msiexec.exe /package MicrosoftEdge.msi /quiet
+
+#MOZILLA FIREFOX
+Invoke-WebRequest -Uri https://download.mozilla.org/?product=firefox-latest&os=win64&lang=en-US -OutFile MozillaFirefox.msi -UseBasicParsing
+
+#spotify
+Invoke-WebRequest -Uri http://download.spotify.com/SpotifyFullSetup.exe -OutFile spotify.exe -UseBasicParsing
+
+winget install vscode
+
+
+
