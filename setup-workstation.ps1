@@ -2,9 +2,11 @@
 #keyboard
 Get-WinUserlanguageList
 Set-WinUserLanguageList -LanguageList NB
+#Set-WinUserLanguageList no-nb -Force
 
 #screen
 Set-DisplayResolution -Width 1920 -Height 1200
+#Set-ScreenResolution -Width 1920 -Height 1080 -DeviceID 0
 
 #timezone
 get-timezone -listall
@@ -101,6 +103,7 @@ Invoke-WebRequest -Uri https://download.mozilla.org/?product=firefox-latest&os=w
 #spotify
 Invoke-WebRequest -Uri http://download.spotify.com/SpotifyFullSetup.exe -OutFile spotify.exe -UseBasicParsing
 
+#wscode
 winget install vscode
 
 
